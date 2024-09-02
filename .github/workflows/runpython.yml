@@ -35,9 +35,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
         # Artifact name
-          name: extracted_ips.txt
+          name: extracted_simple_ips.txt
         # A file, directory or wildcard pattern that describes what to upload
-          path: extracted_ips.txt
+          file: extracted_simple_ips.txt
         # The desired behavior if no files are found using the provided path. Available Options:
           warn: Output a warning but do not fail the action
         
@@ -53,6 +53,6 @@ jobs:
       # Artifact name
           name: extracted_multi_ips.txt
       # A file, directory or wildcard pattern that describes what to upload
-          path: extracted_multi_ips.txt
+          file: extracted_multi_ips.txt
       # The desired behavior if no files are found using the provided path. Available Options:
           warn: Output a warning but do not fail the action          
