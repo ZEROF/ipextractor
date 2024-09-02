@@ -33,7 +33,7 @@ def save_ips(urls, filename):
 # Example usage
 urls = [
     'https://www.spamhaus.org/drop/drop.txt',  # Replace with your URLs
-    'https://www.binarydefense.com/banlist.txt'
+    'https://www.binarydefense.com/banlist.txt',
     'https://raw.githubusercontent.com/UoFruitE/ProcessedLists/main/processed_dshield.txt',
     'https://opendbl.net/lists/blocklistde-all.list',
     'https://opendbl.net/lists/bruteforce.list',
