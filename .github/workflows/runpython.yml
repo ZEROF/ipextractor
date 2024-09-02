@@ -37,7 +37,9 @@ jobs:
         # Artifact name
           name: extracted_simple_ips.txt
         # A file, directory or wildcard pattern that describes what to upload
-          file: extracted_simple_ips.txt
+          path: extracted_simple_ips.txt
+        # Retention period
+          retention-days: 3  
         # The desired behavior if no files are found using the provided path. Available Options:
           warn: Output a warning but do not fail the action
         
@@ -53,6 +55,8 @@ jobs:
       # Artifact name
           name: extracted_multi_ips.txt
       # A file, directory or wildcard pattern that describes what to upload
-          file: extracted_multi_ips.txt
+          path: extracted_multi_ips.txt
+      # Retention days
+          retention-days: 3  
       # The desired behavior if no files are found using the provided path. Available Options:
           warn: Output a warning but do not fail the action          
