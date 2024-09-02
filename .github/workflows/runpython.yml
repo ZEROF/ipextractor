@@ -40,9 +40,7 @@ jobs:
           path: extracted_simple_ips.txt
         # Retention period
           retention-days: 3  
-        # The desired behavior if no files are found using the provided path. Available Options:
-          warn: Output a warning but do not fail the action
-        
+
       # Runs a set of commands using the runners shell
       - name: Run mutli URL ipextractor example
         run: python3 ipext_multi.py
@@ -58,5 +56,22 @@ jobs:
           path: extracted_multi_ips.txt
       # Retention days
           retention-days: 3  
-      # The desired behavior if no files are found using the provided path. Available Options:
-          warn: Output a warning but do not fail the action          
+
+      # Commit all changed files back to the repository
+      - uses: stefanzweifel/git-auto-commit-action@v5      
+        with:
+      # Optional. Commit message for the created commit.
+      # Defaults to "Apply automatic changes"
+          commit_message: Automated Change
+
+      # Optional glob pattern of files which should be added to the commit
+      # Defaults to all (.)
+      # See the `pathspec`-documentation for git
+      # - https://git-scm.com/docs/git-add#Documentation/git-add.txt-ltpathspecgt82308203
+      # - https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefpathspecapathspec
+          file_pattern: '*.txt'
+
+      # Optional. Local file path to the repository.
+      # Defaults to the root of the repository.
+          repository: .
+      
