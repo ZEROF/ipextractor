@@ -1,14 +1,12 @@
-# This is a basic workflow to help you get started with Actions
-
-name: CI
+name: CI Lists Updates
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  # pull_request:
+  #  branches: [ "main" ]
   schedule:
     - cron: '0 22 * * *'
   # Allows you to run this workflow manually from the Actions tab
@@ -40,6 +38,13 @@ jobs:
           path: extracted_simple_ips.txt
         # Retention period
           retention-days: 3  
+        # The desired behavior if no files are found using the provided path.
+        # Available Options:
+        #   warn: Output a warning but do not fail the action
+        #   error: Fail the action with an error message
+        #   ignore: Do not output any warnings or errors, the action does not fail
+        # Optional. Default is 'warn'
+          if-no-files-found: error 
 
       # Runs a set of commands using the runners shell
       - name: Run mutli URL ipextractor example
@@ -56,13 +61,15 @@ jobs:
           path: extracted_multi_ips.txt
       # Retention days
           retention-days: 3  
+      # Optional. Default is 'warn'
+          if-no-files-found: error 
 
       # Commit all changed files back to the repository
       - uses: stefanzweifel/git-auto-commit-action@v5      
         with:
       # Optional. Commit message for the created commit.
       # Defaults to "Apply automatic changes"
-          commit_message: Automated Change
+          commit_message: GitHub Action Automated Change
 
       # Optional glob pattern of files which should be added to the commit
       # Defaults to all (.)

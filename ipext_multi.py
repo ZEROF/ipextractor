@@ -4,7 +4,7 @@ import re
 
 def download_file(url):
     headers = {
-        'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Gecko/20100101 Firefox/92.0'
+        'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Gecko/20100101 Firefox/92.0' # Avoid download block
     }
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
@@ -36,8 +36,7 @@ urls = [
     'https://www.binarydefense.com/banlist.txt',
     'https://raw.githubusercontent.com/UoFruitE/ProcessedLists/main/processed_dshield.txt',
     'https://opendbl.net/lists/blocklistde-all.list',
-    'https://opendbl.net/lists/bruteforce.list',
-    'https://www.spamhaus.org/drop/drop.txt'
+    'https://opendbl.net/lists/bruteforce.list'
 ]
 
 save_ips(urls, 'extracted_multi_ips.txt')

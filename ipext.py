@@ -4,7 +4,7 @@ import re
 
 def download_file(url):
     headers = {
-        'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Gecko/20100101 Firefox/92.0'
+        'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Gecko/20100101 Firefox/92.0' # Avoid download block
     }
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
