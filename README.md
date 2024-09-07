@@ -16,7 +16,7 @@ How to use with FortiGate: "For now everyone can send url proposal"
 
 `` You can already utilize the 'RAW' URL's from this repository for seamless integration with your firewall. ``
 
-#### Included lists in multi_ips.txt:
+#### Included lists in extracted_multi_ips.txt:
 
 1. Spamhaus
 2. BinaryDefense
@@ -24,6 +24,9 @@ How to use with FortiGate: "For now everyone can send url proposal"
 4. Crowdsec
 5. Bruteforce
 6. Talos
+
+#### Included list in "extracted_simple_ips.txt
+1. Spamhaus
 
 #### TO DO LIST
 
