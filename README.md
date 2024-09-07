@@ -8,13 +8,13 @@ Using a block list in conjunction with firewalls is a critical strategy for enha
 
 #### Supported firewalls
 
-How to use with PfSense: "For now everyone can send url proposal"
+Instructions for [PfSense](https://www.provya.com/blog/pfsense-opnsense-blocking-bad-risky-ip-addresses/)
 
-How to use with OpenSense: "For now everyone can send url proposal"
+Instruction for [Opensense](https://docs.opnsense.org/manual/how-tos/edrop.html)
 
-How to use with FortiGate: "For now everyone can send url proposal"
+Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/administration-guide/891236/ip-address-threat-feed)
 
-`` You can already utilize the 'RAW' URL's from this repository for seamless integration with your firewall. ``
+`` Use 'RAW' URL (extracted_multi_ips.txt) from this repository for seamless integration with your firewall. ``
 
 #### Included lists in extracted_multi_ips.txt:
 
@@ -24,14 +24,15 @@ How to use with FortiGate: "For now everyone can send url proposal"
 4. Crowdsec
 5. Bruteforce
 6. Talos
+7. BlocklistDE
 
 #### Included list in "extracted_simple_ips.txt
 1. Spamhaus
 
 #### TO DO LIST
 
-- [ ] Instuction for firewalls (listed above), if someone have instructions about other firewalls, please contact me (ticket)
-- [ ] Better README
+- [x] Instuction for firewalls (listed above), if someone have instructions for other firewalls, please open case
+- [x] Better README
 - [x] Add CrowdSec private mirror
   [x] Add Talos block list
 - [ ] Host block list(s) mirror(s) (selfhosted on the secondary domain)
