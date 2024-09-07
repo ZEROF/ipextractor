@@ -16,11 +16,21 @@ How to use with FortiGate: "For now everyone can send url proposal"
 
 `` You can already utilize the 'RAW' URL's from this repository for seamless integration with your firewall. ``
 
+#### Included lists in multi_ips.txt:
+
+1. Spamhaus
+2. BinaryDefense
+3. DShield
+4. Crowdsec
+5. Bruteforce
+6. Talos
+
 #### TO DO LIST
 
 - [ ] Instuction for firewalls (listed above), if someone have instructions about other firewalls, please contact me (ticket)
 - [ ] Better README
-- [ ] Add CrowdSec private mirror
+- [x] Add CrowdSec private mirror
+  [x] Add Talos block list
 - [ ] Host block list(s) mirror(s) (selfhosted on the secondary domain)
 - [ ] Create web home for this repository (ipexblock.something.x)
 - [x] GitHub Actions: block run if errors are detected
