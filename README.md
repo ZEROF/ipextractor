@@ -1,5 +1,5 @@
 
-# IPExtractor for IPEX Dynamic Block List (s)#
+# IPExtractor for IPEX Dynamic Block List (s)
 <p style="margin-left: auto;margin-right: auto;">
 <b> Extract IP addresses from text files using python and create firewall IP block list </b>
 </p>
