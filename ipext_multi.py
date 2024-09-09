@@ -14,7 +14,7 @@ def download_file(url):
         return None
 
 def extract_ips(text):
-    ip_pattern = r'\b(?:\d{1,3}\.){3}\d{1,3}\b'
+    ip_pattern = r'(?:(?:\d{1,3}\.){3}\d{1,3})(?:/\d{1,2})?'
     return re.findall(ip_pattern, text)
 
 def save_ips(urls, filename):
