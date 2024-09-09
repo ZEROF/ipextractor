@@ -48,9 +48,9 @@ Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/a
 - [x] Instuction for firewalls (listed above), if someone have instructions for other firewalls, please open issue
 - [x] Better README
 - [x] Add CrowdSec private mirror
-  [x] Add Talos block list
+- [x] Add Talos block list
 - [ ] Host block list(s) mirror(s) (selfhosted on the secondary domain)
-- [ ] Create web home for this repository (ipex.something.x)
+- [x] Create web home for this repository (ipex.something.x) (not hosted yet, simple html finished)
 - [x] GitHub Actions: block run if errors are detected
 - [x] Merge updated list(s) after running GitHub Actions
 - [x] Python: don't stop updating list(s) if source is sending error 400
