@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A minimalist dynamic DNS service">
+<title>IPEX Dinamic Block List</title>
+<link rel="icon" type="image/png" href="images/ipextractor.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<script>
+  const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  document.documentElement.setAttribute('data-bs-theme', theme)
+</script>
+<nav class="navbar sticky-top bg-body-tertiary">
+  <div class="container">
+    <a class="navbar-brand" href="https://ipexdbl.lugons.org">IPEX DBL</a>
+  </div>
+</nav>
+<div class="container my-3">
+  <h1 class="display-4">IPEX DBL</h1>
+  <p class="lead">A minimalist dynamic block list service. No plugins no stress.</p>
+  <h2>Features</h2>
+  <ul>
+    <li>Easy firewall integration</li>
+    <li>OpenSource project on <a href="https://github.com/ZEROF/ipextractor">GitHub</a></li>
+    <li>No ads, no tracking, no nonsense</li>
+    <li>
+      Clean Dinamic IP Blocks created from:
+      <ul>
+        <li><code><var>Spamhaus</var></code></li>
+        <li><code><var>BinaryDefense</var></code></li>
+        <li><code><var>DShield</var></code></li>
+        <li><code><var>Crowdsec</var></code></li> 
+        <li><code><var>Bruteforce</var></code></li>
+        <li><code><var>Talos</var></code></li>
+        <li><code><var>BlocklistDE</var></code></li>
+      </ul>
+    </li>
+    <li>We can update IPEX DBL <code>source</code> in any time in the future.</a></li>
+  </ul>
+  <h2>Getting Started</h2>
+  <p>Instructions for: <a href="https://www.provya.com/blog/pfsense-opnsense-blocking-bad-risky-ip-addressesw.provya.com/blog/pfsense-opnsense-blocking-bad-risky-ip-addresses">PFSense</a></p>
+  <p>Instructions for <a href="https://docs.opnsense.org/manual/how-tos/edrop.html">OpenSense</a></p>
+  <p>Instructions for <a href="https://docs.fortinet.com/document/fortigate/7.2.4/administration-guide/891236/ip-address-threat-feed">Fortigate</a></p>
+
+
+
+  <h2>Things to Know</h2>
+  <ul>
+    <li>Dinamic Block List or DBL is list with IP's in rotation every 24h.</li>
+    <li>IPv4 only (for now)</li>
+    <li>Open GitHub issue if list stop updating few <strong>days</strong>.</li>
+  </ul>
+  <h2>Privacy Policy</h2>
+  <p>No personal data is collected.</p>
+  <p class="small">Powered by <a href="https://lugons.org">Lugons</a></p>
+</div>
