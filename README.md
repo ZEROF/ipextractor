@@ -13,7 +13,7 @@ The number of IP block lists available for use with firewalls is huge, including
 
 Using a block list in conjunction with firewalls is a critical strategy for enhancing network security and effectively combating malicious actors. A block list, also known as a blacklist, is a list of IP addresses, domains, or URLs that are known to be associated with malicious activity. By implementing a block list, organizations can proactively prevent access to harmful content and reduce the risk of cyber threats.
 
-##### Why opt for IPEX multi_list rather than other available choices:
+##### Why opt for IPEX DBL list rather than other available choices:
 
 1. Our PoC demostrated that list with 15000 entries sometimes get reduced to only 7000. This means that these lists duplicate one another or utilize identical data sources. 
 2. You can quickly set your firewall aliases and related policies without the usual plugin hassle.
@@ -28,9 +28,9 @@ Instruction for [Opensense](https://docs.opnsense.org/manual/how-tos/edrop.html)
 
 Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/administration-guide/891236/ip-address-threat-feed)
 
-`` Use 'RAW' URL (extracted_multi_ips.txt) from this repository for seamless integration with your firewall. ``
+`` Use 'RAW' URL (ipexdbl.txt) from this repository for seamless integration with your firewall. ``
 
-#### Included lists for extracted_multi_ips.txt:
+#### Included lists for ipexdbl.txt:
 
 1. Spamhaus
 2. BinaryDefense
@@ -40,7 +40,7 @@ Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/a
 6. Talos
 7. BlocklistDE
 
-#### Included list for extracted_simple_ips.txt:
+#### Included list for ipexdbl_simple.txt:
 1. Spamhaus
 
 #### TO DO LIST
