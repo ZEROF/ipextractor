@@ -30,7 +30,7 @@ Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/a
 
 `` Use 'RAW' URL (ipexdbl.txt) from this repository for seamless integration with your firewall. ``
 
-#### Included lists for ipexdbl.txt:
+#### ipexdbl.txt extracted from :
 
 1. Spamhaus
 2. BinaryDefense
@@ -40,7 +40,7 @@ Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/a
 6. Talos
 7. BlocklistDE
 
-#### Included list for ipexdbl_simple.txt:
+#### ipexdbl_simple.txt extracted from:
 1. Spamhaus
 
 #### TO DO LIST
