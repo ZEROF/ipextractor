@@ -41,4 +41,4 @@ urls = [
     'https://opendbl.net/lists/bruteforce.list'
 ]
 
-save_ips(urls, 'extracted_multi_ips.txt')
+save_ips(urls, 'ipexdbl.txt')

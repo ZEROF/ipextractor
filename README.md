@@ -6,7 +6,7 @@
 <div style="margin-left: auto;
             margin-right: auto;
             width: 40%">
-<img src="images/ipextractor.png"  alt="Pixabay free firewall image" width="220" height="180">
+<img src="website/images/ipextractor.png"  alt="Pixabay free firewall image" width="220" height="180">
 </div>
 
 The number of IP block lists available for use with firewalls is huge, including among others, Spamhaus, Crowdsec, BinaryDefence BlocklistDE and DShield. This project aims to consolidate the most effective block lists. The PoC for this project was a six-month journey of exploration and I don't have feeling that it's done.
@@ -44,7 +44,7 @@ Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/a
 1. Spamhaus
 
 #### TO DO LIST
-
+- [ ] Get eu.org domain and check with Lugons team about mirror domain.
 - [x] Instuction for firewalls (listed above), if someone have instructions for other firewalls, please open issue
 - [x] Better README
 - [x] Add CrowdSec private mirror

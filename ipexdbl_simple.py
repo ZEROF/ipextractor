@@ -31,4 +31,4 @@ file_content = download_file(url)
 
 if file_content:
     ip_addresses = extract_ips(file_content)
-    save_ips(ip_addresses, 'extracted_simple_ips.txt')
+    save_ips(ip_addresses, 'ipexdbl_simple.txt')

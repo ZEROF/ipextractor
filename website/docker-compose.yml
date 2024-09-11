@@ -1,0 +1,9 @@
+services:
+  ipexweb:
+    image: python:3.12.6
+    volumes:
+      - ../website:/ipexweb
+    ports:
+      - "1337:80"
+    working_dir: /ipexweb
+    command: bash -c "python3 -m http.server -d /ipexweb 80 2>&1"
