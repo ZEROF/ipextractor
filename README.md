@@ -39,11 +39,13 @@ Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/a
 5. Bruteforce
 6. Talos
 7. BlocklistDE
+8. ProjectHoneypot
 
 #### ipexdbl_simple.txt extracted from:
 1. Spamhaus
 
 #### TO DO LIST
+- [x] Add projecthoneypot.org RSS feed (beta).
 - [ ] Get eu.org domain and check with Lugons team about mirror domain.
 - [x] Instuction for firewalls (listed above), if someone have instructions for other firewalls, please open issue
 - [x] Better README
