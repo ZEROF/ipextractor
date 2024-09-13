@@ -24,6 +24,7 @@ def save_ips(urls, filename):
         if file_content:
             ip_addresses = extract_ips(file_content)
             unique_ips.update(ip_addresses)  # Add new IPs to the set
+            print(f"Found {len(ip_addresses)} IPs from {url}") # Print the count of IPs for each URL
 
     with open(filename, 'w') as file:
         for ip in sorted(unique_ips):  # Sort IPs for better readability
