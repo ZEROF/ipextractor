@@ -57,3 +57,21 @@ Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/a
 - [x] Merge updated list(s) after running GitHub Actions
 - [x] Python: don't stop updating list(s) if source is sending error 400
 - [ ] IPEX is inbound traffic dynamic block list, but outbound DBL can exist as well (PoC and more information are needed)
+
+### Repo layout
+```
+ipextractor/
+├── ipexdbl.py
+├── ipexdbl_simple.py
+├── ipexdbl_simple.txt
+├── ipexdbl.txt
+├── LICENSE
+├── README.md
+└── website
+    ├── CHANGELOG.md
+    ├── docker-compose.yml
+    ├── images
+    │   └── ipextractor.png
+    ├── index.html
+    └── README-Docker.md
+```
