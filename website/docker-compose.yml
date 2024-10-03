@@ -1,6 +1,7 @@
 services:
   ipexweb:
     image: python:3.12.6
+    restart: always
     volumes:
       - ../website:/ipexweb
     ports:

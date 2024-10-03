@@ -9,6 +9,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add restart policy to docker-compose
+
+### Removed
+#
+### Fixed
+#
+### Changed
+
+- docker-compose.yml update
+
+## [1.0.3] 11-09-2024
+
+### Added
+
 - Update cronjob schedule to 12h
 
 ### Removed

@@ -55,7 +55,7 @@ urls = [
     'https://raw.githubusercontent.com/UoFruitE/ProcessedLists/main/processed_dshield.txt',
     'https://opendbl.net/lists/blocklistde-all.list',
     'https://opendbl.root.rodeo/security/blocklist',
-    'https://shorturl.at/zWRAo',
+    'https://ipex.root.rodeo/talos.txt',
     'https://opendbl.net/lists/bruteforce.list',
     'https://www.projecthoneypot.org/list_of_ips.php?t=d&rss=1'
 ]
