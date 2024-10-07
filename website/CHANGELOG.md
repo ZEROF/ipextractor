@@ -5,11 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.3] 11-09-2024
+## [1.0.4] 11-09-2024
 
 ### Added
 
-- Add restart policy to docker-compose
+- Set update interval to 6h
+- Add new list (SSL IP DBL)
 
 ### Removed
 #
@@ -17,7 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 #
 ### Changed
 
-- docker-compose.yml update
+- Home page update
 
 ## [1.0.3] 11-09-2024
 

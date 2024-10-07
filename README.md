@@ -17,7 +17,7 @@ Using a block list in conjunction with firewalls is a critical strategy for enha
 
 1. Our PoC demostrated that list with 15000 entries sometimes get reduced to only 7000. This means that these lists duplicate one another or utilize identical data sources. 
 2. You can quickly set your firewall aliases and related policies without the usual plugin hassle.
-3. The lists are updated every 12 hours if there is fresh information available from the source. This ensures that IPEX dynamic list receive the most current and relevant data.
+3. The lists are updated every 6 hours if there is fresh information available from the source. This ensures that IPEX dynamic list receive the most current and relevant data.
 4. This is an open source project, and the list is maintained clean, without any additional inputs (publicity) that could create problems for some firewalls.
 
 #### Supported firewalls
@@ -40,13 +40,14 @@ Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/a
 6. Talos
 7. BlocklistDE
 8. ProjectHoneypot
+9. SSLBL Botnet C2 IP Blacklist
 
 #### ipexdbl_simple.txt extracted from:
 1. Spamhaus
 
 #### TO DO LIST
-- [x] Add projecthoneypot.org RSS feed (beta).
-- [ ] Get eu.org domain and check with Lugons team about mirror domain.
+- [x] Add SSLBL Botnet C2 IP Blacklist list
+- [x] Add projecthoneypot.org RSS feed (beta)
 - [x] Instuction for firewalls (listed above), if someone have instructions for other firewalls, please open issue
 - [x] Better README
 - [x] Add CrowdSec private mirror
