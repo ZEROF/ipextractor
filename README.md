@@ -52,7 +52,7 @@ Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/a
 - [x] Better README
 - [x] Add CrowdSec private mirror
 - [x] Add Talos block list
-- [ ] Host block list(s) mirror(s) (selfhosted on the secondary domain)
+- [ ] Host block list(s) mirror(s): We are in Alfa stage, don't use "MIRRORS" script at all.
 - [x] Create web home for this repository (ipex.something.x) (not hosted yet, simple html finished)
 - [x] GitHub Actions: block run if errors are detected
 - [x] Merge updated list(s) after running GitHub Actions
