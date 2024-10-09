@@ -61,12 +61,14 @@ Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/a
 
 ### Repo layout
 ```
-ipextractor/
+ipextractor
 ├── ipexdbl.py
 ├── ipexdbl_simple.py
 ├── ipexdbl_simple.txt
 ├── ipexdbl.txt
 ├── LICENSE
+├── mirrors
+│   └── honeypotproject.py
 ├── README.md
 └── website
     ├── CHANGELOG.md
