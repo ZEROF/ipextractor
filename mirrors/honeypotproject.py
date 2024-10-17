@@ -26,7 +26,7 @@ def read_existing_ips(filename):
         return set()  # Return an empty set if the file does not exist
     
 def save_ips(urls, filename):
-    unique_ips = set()  # Initialize a set to store unique IPs
+    unique_ips = set()  # Initialize a set to store unique IPs (on every run)
     for url in urls:
         file_content = download_file(url)
         if file_content:
