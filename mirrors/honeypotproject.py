@@ -50,13 +50,13 @@ def save_ips(urls, filename):
 
 # Example usage
 urls = [
-   'http://www.projecthoneypot.org/list_of_ips.php?t=h&rss=1',  # Replace with your URLs
-   'http://www.projecthoneypot.org/list_of_ips.php?t=s&rss=1',
-   'http://www.projecthoneypot.org/list_of_ips.php?t=w&rss=1',
-   'http://www.projecthoneypot.org/list_of_ips.php?t=p&rss=1',
-   'http://www.projecthoneypot.org/list_of_ips.php?t=d&rss=1',
-   'http://www.projecthoneypot.org/list_of_ips.php?t=r&rss=1',
-   'http://www.projecthoneypot.org/list_of_ips.php?t=se&rss=1'
+   'https://www.projecthoneypot.org/list_of_ips.php?t=h&rss=1',  # Replace with your URLs
+   'https://www.projecthoneypot.org/list_of_ips.php?t=s&rss=1',
+   'https://www.projecthoneypot.org/list_of_ips.php?t=w&rss=1',
+   'https://www.projecthoneypot.org/list_of_ips.php?t=p&rss=1',
+   'https://www.projecthoneypot.org/list_of_ips.php?t=d&rss=1',
+   'https://www.projecthoneypot.org/list_of_ips.php?t=r&rss=1',
+   'https://www.projecthoneypot.org/list_of_ips.php?t=se&rss=1'
 ]
 
 save_ips(urls, 'honeypotproject.txt')

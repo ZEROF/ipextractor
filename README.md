@@ -39,13 +39,14 @@ Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/a
 5. Bruteforce
 6. Talos
 7. BlocklistDE
-8. ProjectHoneypot
+8. HoneypotProject
 9. SSLBL Botnet C2 IP Blacklist
 
 #### ipexdbl_simple.txt extracted from:
 1. Spamhaus
 
 #### TO DO LIST
+- [x] Host full HPP mirror
 - [x] Add SSLBL Botnet C2 IP Blacklist list
 - [x] Add projecthoneypot.org RSS feed (beta)
 - [x] Instuction for firewalls (listed above), if someone have instructions for other firewalls, please open issue
