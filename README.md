@@ -39,7 +39,7 @@ Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/a
 5. Bruteforce
 6. Talos
 7. BlocklistDE
-8. HoneypotProject
+8. ProjectHoneypot
 9. SSLBL Botnet C2 IP Blacklist
 
 #### ipexdbl_simple.txt extracted from:
@@ -69,7 +69,7 @@ ipextractor
 ├── ipexdbl.txt
 ├── LICENSE
 ├── mirrors
-│   └── honeypotproject.py
+│   └── projecthoneypot.py
 ├── README.md
 └── website
     ├── CHANGELOG.md
