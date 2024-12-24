@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+## [1.0.7] 11-09-2024
+
+### Added
+
+- Set update interval to 4h
+
+### Removed
+#
+### Fixed
+- Ensuring that code can handle various scenarios in which URLs might fail while still successfully downloading from the working ones.
+
+### Changed
+
+- Update python version to 3.13.1
 
 ## [1.0.6] 11-09-2024
 
