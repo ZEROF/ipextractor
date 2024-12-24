@@ -4,13 +4,15 @@ import re
 
 def download_file(url):
     headers = {
-        'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Gecko/20100101 Firefox/92.0' # Avoid download block
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Gecko/20100101 Firefox/92.0'  # Avoid download block  
     }
-    response = requests.get(url, headers=headers)
-    if response.status_code == 200:
-        return response.text
-    else:
-        print(f"Failed to download file from {url}.")
+    
+    try:
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()  # Raises HTTPError for bad responses  
+        return response.text  
+    except requests.exceptions.RequestException as e:
+        print(f"Failed to download file from {url}. Error: {e}")
         return None
 
 def extract_ips(text):
