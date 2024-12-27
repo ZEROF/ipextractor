@@ -56,7 +56,7 @@ urls = [
     'https://www.binarydefense.com/banlist.txt',
     'https://raw.githubusercontent.com/UoFruitE/ProcessedLists/main/processed_dshield.txt',
     'https://lists.blocklist.de/lists/all.txt',
-    'https://opendbl.root.rodeo/security/blocklist',
+    'https://crowdsec.root.rodeo/security/blocklist',
     'https://ipex.root.rodeo/talos.txt',
     'https://opendbl.net/lists/bruteforce.list',
     'https://ipex.root.rodeo/projecthoneypot.txt',
