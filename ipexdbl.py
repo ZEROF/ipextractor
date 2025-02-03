@@ -59,8 +59,7 @@ urls = [
     'https://crowdsec.root.rodeo/security/blocklist',
     'https://ipex.root.rodeo/talos.txt',
     'https://opendbl.net/lists/bruteforce.list',
-    'https://ipex.root.rodeo/projecthoneypot.txt',
-    'https://sslbl.abuse.ch/blacklist/sslipblacklist.txt'
+    'https://ipex.root.rodeo/projecthoneypot.txt'
 ]
 
 save_ips(urls, 'ipexdbl.txt')
