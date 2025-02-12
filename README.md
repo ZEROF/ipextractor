@@ -19,6 +19,7 @@ Using a block list in conjunction with firewalls is a critical strategy for enha
 2. You can quickly set your firewall aliases and related policies without the usual plugin hassle.
 3. The lists are updated every 4 hours if there is fresh information available from the source. This ensures that IPEX dynamic list receive the most current and relevant data.
 4. This is an open source project, and the list is maintained clean, without any additional inputs (publicity) that could create problems for some firewalls.
+5. IPEX manage own honeypots, we call them IPEX Hunters. We learn from working on them and we take time to assure flowless integration.
 
 #### Supported firewalls
 
@@ -32,7 +33,7 @@ Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/a
 
 #### ipexdbl.txt extracted from :
 
-1. Spamhaus
+1. IPEX Hunters
 2. BinaryDefense
 3. DShield
 4. Crowdsec
@@ -40,24 +41,31 @@ Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/a
 6. Talos
 7. BlocklistDE
 8. ProjectHoneypot
+9. Spamhaus
 
 #### ipexdbl_simple.txt extracted from:
 1. Spamhaus
 
 #### TO DO LIST
 - [x] Host full HPP mirror
-- [x] Add SSLBL Botnet C2 IP Blacklist list
+- [x] Add ipexhunters.txt (integrate IPEX project honeypots list.)
 - [x] Add projecthoneypot.org RSS feed (beta)
 - [x] Instuction for firewalls (listed above), if someone have instructions for other firewalls, please open issue
 - [x] Better README
 - [x] Add CrowdSec private mirror
 - [x] Add Talos block list
-- [ ] Host block list(s) mirror(s): We are in Alfa stage, don't use "MIRRORS" script at all.
+- [x] Host block list(s) mirror(s): only to show working solution for some sources.
 - [x] Create web home for this repository (ipex.something.x) (not hosted yet, simple html finished)
 - [x] GitHub Actions: block run if errors are detected
 - [x] Merge updated list(s) after running GitHub Actions
 - [x] Python: don't stop updating list(s) if source is sending error 400
 - [ ] IPEX is inbound traffic dynamic block list, but outbound DBL can exist as well (PoC and more information are needed)
+- [x] Integration of IPEX Hunters honeypots (for now only endlessh backend used)
+- [ ] Integrate web honeypotting to IPEX Hunters 
+
+### Support our project
+
+- VPS and SERVER donations are accepted (we will hunt bad actors for you)
 
 ### Repo layout
 ```
