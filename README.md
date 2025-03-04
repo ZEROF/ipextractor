@@ -62,6 +62,7 @@ Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/a
 - [ ] IPEX is inbound traffic dynamic block list, but outbound DBL can exist as well (PoC and more information are needed)
 - [x] Integration of IPEX Hunters honeypots (for now only endlessh backend used)
 - [ ] Integrate web honeypotting to IPEX Hunters 
+- [x] Add local version for Fortigate settings
 
 ### Support our project
 

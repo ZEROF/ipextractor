@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.1] 04-03-2025
+
+### Added
+- Fortigate Instructions
+
+### Removed
+-  Wrong format code
+
+### Fixed
+- Home page URL redirection
+
+### Changed
+- Instruction URL's open in the new windows
+
 ## [1.1.0] 12-02-2025
 
 ### Added
