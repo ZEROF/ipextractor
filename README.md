@@ -68,6 +68,10 @@ Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/a
 
 - VPS and SERVER donations are accepted (we will hunt bad actors for you)
 
+Thanks https://glesys.com
+ ![image](https://github.com/user-attachments/assets/ab142032-67c2-4c39-b5b9-8c5e116732c7)
+
+
 ### Repo layout
 ```
 ipextractor/
