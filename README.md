@@ -68,8 +68,13 @@ Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/a
 
 - VPS and SERVER donations are accepted (we will hunt bad actors for you)
 
-Thanks https://glesys.com
- ![image](https://github.com/user-attachments/assets/ab142032-67c2-4c39-b5b9-8c5e116732c7)
+Project supported by:
+
+https://glesys.com
+      ![image](https://github.com/user-attachments/assets/ab142032-67c2-4c39-b5b9-8c5e116732c7)
+
+https://www.neocloud.rs
+      ![image](https://github.com/user-attachments/assets/3248351d-76b2-4075-b1c9-9171b8a10951)
 
 
 ### Repo layout
