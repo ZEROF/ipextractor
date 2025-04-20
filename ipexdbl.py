@@ -4,7 +4,8 @@ import re
 
 def download_file(url):
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Gecko/20100101 Firefox/92.0'  # Avoid download block  
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',  # Avoid download block new version
+        'X-Custom-Header': 'Let me in' # Add custom headet to bypass binarydefense 
     }
     
     try:
