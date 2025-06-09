@@ -1,7 +1,9 @@
 
 ![opensense logo](images/opensense_logo.png)
 
-First things first, go to official project page https://ipex.root.rodeo, and find the raw link for file [ipexdbl.txt](https://raw.githubusercontent.com/ZEROF/ipextractor/main/ipexdbl.txt) which contains DBL IP's.
+### OPNSense guide provided by @Sharkey
+
+First things first, on the project page https://ipex.root.rodeo, we find the raw link for file [ipexdbl.txt](https://raw.githubusercontent.com/ZEROF/ipextractor/main/ipexdbl.txt) which contains Ipex DBL IP's.
 
 Next, go to the Firewall Aliases in OPNsense, and add a new one :
 
@@ -30,5 +32,3 @@ For troubleshooting and logging, we can also tag the packets:
 Live Log view using tag filter:
 
 ![opensesne packets log view](images/opensense_label_logview.png)
-
-Instruction provided by @Sharkey

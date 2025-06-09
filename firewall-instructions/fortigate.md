@@ -15,7 +15,6 @@ Text file example:
 2001:0db8::eade:27ff:fe04:aa01-2001:0db8::eade:27ff:fe04:ab01
 ```
 
-
 The file contains one IPv4 or IPv6 address, address range, or subnet per line. See [External resources file format](https://docs.fortinet.com/document/fortigate/7.2.4/administration-guide/009463/threat-feeds#format) for more information about the IP list formatting style.
 
 Example configuration
@@ -47,9 +46,6 @@ config system external-resource
    next
 end
 ```
-
-
-
 
 ###### To apply an IP address threat feed in a firewall policy:
 
@@ -103,9 +99,7 @@ IP addresses that match the IP address threat feed list will be blocked.
     
 ```
 1: date=2023-02-06 time=15:06:50 eventtime=1675724810452621179 tz="-0800" logid="1501054400" type="utm" subtype="dns" eventtype="dns-response" level="warning" vd="root" policyid=0 sessionid=555999 srcip=172.20.120.13 srcport=59602 srccountry="Reserved" srcintf="port2" srcintfrole="undefined" dstip=172.20.120.12 dstport=53 dstcountry="Reserved" dstintf="root" dstintfrole="undefined" proto=17 profile="default" xid=24532 qname="dns.google" qtype="A" qtypeval=1 qclass="IN" ipaddr="208.91.112.55" msg="Domain was blocked because it is in the domain-filter list" action="redirect" domainfilteridx=0 domainfilterlist="IPEX_IP_Blocklist"
-```
-
-    
+```    
 
 Applying an IP address threat feed in a local-in policy
 -------------------------------------------------------
@@ -128,7 +122,6 @@ config firewall local-in-policy
 end
 ```
 
-
 ###### To test the configuration:
 
 1.  From one of the IP addresses listed in IP address threat feed (in this case 172.16.200.2), start a continuous ping to port1:
@@ -136,7 +129,6 @@ end
 ```
 ping 172.16.200.1 –t
 ```
-
     
 2.  On the FortiGate, enable debug flow:
     
@@ -146,8 +138,7 @@ ping 172.16.200.1 –t
 # diagnose debug enable
 # diagnose debug flow trace start 10
 ```
-
-    
+   
 3.  The output of the debug flow shows that traffic is dropped by local-in policy 1:
     
 ```
