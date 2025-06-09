@@ -25,7 +25,7 @@ Using a block list in conjunction with firewalls is a critical strategy for enha
 
 Instructions for [PfSense](https://www.provya.com/blog/pfsense-opnsense-blocking-bad-risky-ip-addresses/)
 
-Instruction for [Opensense](https://docs.opnsense.org/manual/how-tos/edrop.html)
+Instruction for [Opensense](https://github.com/ZEROF/ipextractor/blob/main/firewall-instructions/opensense.md)
 
 Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/administration-guide/891236/ip-address-threat-feed)
 
