@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.4] 07-07-2025
+
+### Added
+ - TreatFox source
+
+### Removed
+- Old list of IPEX DBL sources
+
+### Fixed
+
+### Changed
+- Update python version to 3.13.3 
+- Add tables for all IPEX DLB sources
+
 ## [1.1.3] 20-05-2025
 
 ### Added

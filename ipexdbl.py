@@ -61,7 +61,8 @@ urls = [
     'https://ipex.root.rodeo/talos.txt',
     'https://opendbl.net/lists/bruteforce.list',
     'https://ipex.root.rodeo/projecthoneypot.txt',
-    'https://ipex.root.rodeo/ipexhunters.txt'
+    'https://ipex.root.rodeo/ipexhunters.txt',
+    'https://threatfox.abuse.ch/export/json/recent'
 ]
 
 save_ips(urls, 'ipexdbl.txt')
