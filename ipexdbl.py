@@ -17,7 +17,7 @@ def download_file(url):
         return None
 
 def extract_ips(text):
-    ip_pattern = r'(?:(?:\d{1,3}\.){3}\d{1,3})(?:/(?!1\b)(?:[0-9]|[12][0-9]|3[0-2]))?'
+    ip_pattern = r'(?:\d{1,3}\.){3}\d{1,3}(?:/(?:0|[2-9]|[12][0-9]|3[0-2]))?'
     return re.findall(ip_pattern, text)
 
 def read_existing_ips(filename):
