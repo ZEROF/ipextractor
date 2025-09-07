@@ -17,9 +17,40 @@ def download_file(url):
         return None
 
 def extract_ips(text):
-    # This pattern matches IPv4 addresses but excludes those ending in .0.0 or .0.0/24
-    ip_pattern = r'(?:\d{1,3}\.){3}(?!0\.0)(?:[1-9]\d*|0(?!$))(?:\/24)?'
-    return re.findall(ip_pattern, text)
+    # Step 1: Extract all potential IPs (with optional /24)
+    ip_pattern = r'\b(?:\d{1,3}\.){3}\d{1,3}(?:\/24)?\b'
+    potential_ips = re.findall(ip_pattern, text)
+    
+    valid_ips = []
+    for ip in potential_ips:
+        # Separate base IP and suffix
+        parts = ip.split('/')
+        base_ip = parts[0]
+        suffix = parts[1] if len(parts) > 1 else None
+        
+        # Validate octets
+        octets = base_ip.split('.')
+        if len(octets) != 4:
+            continue
+            
+        try:
+            octets_int = [int(octet) for octet in octets]
+        except ValueError:
+            continue
+            
+        if not all(0 <= x <= 255 for x in octets_int):
+            continue
+            
+        # Step 2: Apply filtering rules
+        if suffix == '24':
+            # Always keep /24 addresses
+            valid_ips.append(ip)
+        else:
+            # For non-/24 addresses, remove if ends with .0 or .0.0
+            if not (base_ip.endswith('.0') or base_ip.endswith('.0.0')):
+                valid_ips.append(ip)
+                
+    return valid_ips
 
 def read_existing_ips(filename):
     try:
