@@ -49,9 +49,7 @@ Hit **Save & Restart**.
 
 More info on banip:
 * https://openwrt.org/docs/guide-user/services/banip
-**Pull request regarding upstream integration [openwrt/packages#27673](https://github.com/openwrt/packages/pull/27673)**
-
-**Pull request regarding upstream integration [openwrt/packages#27673](https://https://github.com/openwrt/packages/pull/27673)**
+* **Pull request regarding upstream integration [openwrt/packages#27673](https://github.com/openwrt/packages/pull/27673)**
 
 #### Verify
 
