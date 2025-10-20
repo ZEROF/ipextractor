@@ -15,7 +15,7 @@ service banip restart
 
 #### Configure banip
 
-[Direct download]([https://raw.githubusercontent.com/openwrt/packages/66c0da125411f50265fd178f9ff836142d67be84/net/banip/files/banip.feeds) of ``banip.feeds`` featuring ipexdbl. You can save this as ``banip.custom.feeds``
+[Direct download](https://raw.githubusercontent.com/openwrt/packages/66c0da125411f50265fd178f9ff836142d67be84/net/banip/files/banip.feeds) of ``banip.feeds`` featuring ipexdbl. You can save this as ``banip.custom.feeds``
 
 ##### CLI
 
