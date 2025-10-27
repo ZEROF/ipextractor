@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import requests
 import re
+import ipaddress
 
 def download_file(url):
     headers = {
@@ -18,37 +19,16 @@ def download_file(url):
 
 def extract_ips(text):
     # Step 1: Extract all potential IPs (with optional /24)
-    ip_pattern = r'\b(?:\d{1,3}\.){3}\d{1,3}(?:\/24)?\b'
+    ip_pattern = r'\b(?:[0-9a-fA-F.:]+)(?:\/\d{1,3})?\b'
     potential_ips = re.findall(ip_pattern, text)
     
     valid_ips = []
     for ip in potential_ips:
-        # Separate base IP and suffix
-        parts = ip.split('/')
-        base_ip = parts[0]
-        suffix = parts[1] if len(parts) > 1 else None
-        
-        # Validate octets
-        octets = base_ip.split('.')
-        if len(octets) != 4:
-            continue
-            
         try:
-            octets_int = [int(octet) for octet in octets]
+            _addr = ipaddress.ip_network(ip, strict=False)
         except ValueError:
             continue
-            
-        if not all(0 <= x <= 255 for x in octets_int):
-            continue
-            
-        # Step 2: Apply filtering rules
-        if suffix == '24':
-            # Always keep /24 addresses
-            valid_ips.append(ip)
-        else:
-            # For non-/24 addresses, remove if ends with .0 or .0.0
-            if not (base_ip.endswith('.0') or base_ip.endswith('.0.0')):
-                valid_ips.append(ip)
+        valid_ips.append(_addr)
                 
     return valid_ips
 
@@ -73,8 +53,8 @@ def save_ips(urls, filename):
     print(f"Old file has {len(existing_ips)} unique IPs.")
  
     with open(filename, 'w') as file:
-        for ip in sorted(unique_ips):  # Sort IPs for better readability
-            file.write(ip + '\n')
+        for ip in sorted(unique_ips, key=ipaddress.get_mixed_type_key):  # Sort IPs for better readability
+            file.write(format(ip) + '\n')
     print(f"Saved {len(unique_ips)} unique IP addresses to {filename}")
   
     # Calculate and display the difference in IP counts  
@@ -86,6 +66,7 @@ def save_ips(urls, filename):
 # Example usage
 urls = [
     'https://www.spamhaus.org/drop/drop.txt',  # Replace with your URLs
+    'https://www.spamhaus.org/drop/dropv6.txt',
     'https://www.binarydefense.com/banlist.txt',
     'https://raw.githubusercontent.com/UoFruitE/ProcessedLists/main/processed_dshield.txt',
     'https://lists.blocklist.de/lists/all.txt',
