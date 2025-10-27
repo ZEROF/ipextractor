@@ -54,7 +54,10 @@ def save_ips(urls, filename):
  
     with open(filename, 'w') as file:
         for ip in sorted(unique_ips, key=ipaddress.get_mixed_type_key):  # Sort IPs for better readability
-            file.write(format(ip) + '\n')
+            if ip.num_addresses == 1:
+                file.write(format(ip.hosts()[0]) + '\n')
+            else:
+                file.write(format(ip) + '\n')
     print(f"Saved {len(unique_ips)} unique IP addresses to {filename}")
   
     # Calculate and display the difference in IP counts  
