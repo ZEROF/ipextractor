@@ -1,6 +1,6 @@
 services:
   ipexweb:
-    image: python:3.13.5
+    image: python:3.14
     restart: always
     volumes:
       - ../website:/ipexweb

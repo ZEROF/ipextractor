@@ -29,6 +29,8 @@ Instruction for [Opensense](https://github.com/ZEROF/ipextractor/blob/main/firew
 
 Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/administration-guide/891236/ip-address-threat-feed)
 
+Instruction for [OpenWRT](https://github.com/ZEROF/ipextractor/blob/main/firewall-instructions/openwrt.md)
+
 `` Use 'RAW' URL (ipexdbl.txt) from this repository for seamless integration with your firewall. ``
 
 #### ipexdbl.txt extracted from :
