@@ -27,7 +27,7 @@ Instructions for [PfSense](https://www.provya.com/blog/pfsense-opnsense-blocking
 
 Instruction for [Opensense](https://github.com/ZEROF/ipextractor/blob/main/firewall-instructions/opensense.md)
 
-Instruction for [Fortigate](https://docs.fortinet.com/document/fortigate/7.2.4/administration-guide/891236/ip-address-threat-feed)
+Instruction for [Fortigate](https://github.com/ZEROF/ipextractor/blob/main/firewall-instructions/fortigate.md)
 
 Instruction for [OpenWRT](https://github.com/ZEROF/ipextractor/blob/main/firewall-instructions/openwrt.md)
 
