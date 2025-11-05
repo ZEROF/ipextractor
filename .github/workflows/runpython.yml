@@ -65,7 +65,7 @@ jobs:
           if-no-files-found: error 
 
       # Commit all changed files back to the repository
-      - uses: stefanzweifel/git-auto-commit-action@v5      
+      - uses: stefanzweifel/git-auto-commit-action@v7      
         with:
       # Optional. Commit message for the created commit.
       # Defaults to "Apply automatic changes"
