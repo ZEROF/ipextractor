@@ -75,34 +75,44 @@ Project supported by:
 
 https://glesys.com
 
- ![image](https://github.com/user-attachments/assets/ab142032-67c2-4c39-b5b9-8c5e116732c7)
+ <img width="300" alt="Lockup Black" src="https://github.com/user-attachments/assets/80c895e1-7a7e-4f7d-8618-50e585d440f3" />
 
 https://www.neocloud.rs
 
 ![image](https://github.com/user-attachments/assets/3248351d-76b2-4075-b1c9-9171b8a10951)
 
-
 ### Repo layout
 ```
 ipextractor
+├── LICENSE
+├── README.md
 ├── firewall-instructions
 │   ├── fortigate.md
 │   ├── images
-│   │   ├── *
-│   └── opensense.md
+│   │   ├── opensense_alias_1.png
+│   │   ├── opensense_alias_2.png
+│   │   ├── opensense_alias_3.png
+│   │   ├── opensense_floating_block_rule.png
+│   │   ├── opensense_floating_rule.png
+│   │   ├── opensense_label_logview.png
+│   │   ├── opensense_logo.png
+│   │   ├── opensense_packets_tag.png
+│   │   ├── openwrt_banip_1.png
+│   │   ├── openwrt_banip_2.png
+│   │   └── openwrt_logo.png
+│   ├── opensense.md
+│   └── openwrt.md
 ├── ipexdbl.py
+├── ipexdbl.txt
 ├── ipexdbl_simple.py
 ├── ipexdbl_simple.txt
-├── ipexdbl.txt
-├── LICENSE
 ├── mirrors
 │   └── projecthoneypot.py
-├── README.md
 └── website
     ├── CHANGELOG.md
+    ├── README-Docker.md
     ├── docker-compose.yml
     ├── images
     │   └── ipextractor.png
-    ├── index.html
-    └── README-Docker.mdd
+    └── index.html
 ```
