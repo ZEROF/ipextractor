@@ -1,6 +1,6 @@
 services:
   ipexweb:
-    image: python:3.14
+    image: python:3.14.2-slim-trixie
     restart: always
     volumes:
       - ../website:/ipexweb
