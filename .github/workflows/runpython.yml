@@ -24,7 +24,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       # Runs a single command using the runners shell
       - name: Run one URL ipextractor example (Spamhaus block list)
@@ -32,7 +32,7 @@ jobs:
         
       # Upload extracted IP's
       - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
         # Artifact name
           name: ipexdbl_simple.txt
