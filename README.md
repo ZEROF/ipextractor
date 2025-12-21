@@ -1,5 +1,6 @@
 
-# IPEx DBL
+## IPEx DBL
+
 <p style="margin-left: auto;margin-right: auto;">
 <b> IP Extractor for IPEX Dynamic Block List (s) </b>
 </p>
@@ -13,7 +14,7 @@ The number of IP block lists available for use with firewalls is huge, including
 
 Using a block list in conjunction with firewalls is a critical strategy for enhancing network security and effectively combating malicious actors. A block list, also known as a blacklist, is a list of IP addresses, domains, or URLs that are known to be associated with malicious activity. By implementing a block list, organizations can proactively prevent access to harmful content and reduce the risk of cyber threats.
 
-##### Why opt for IPEX DBL list rather than other available choices:
+### Why opt for IPEX DBL list rather than other available choices:
 
 1. Our PoC demostrated that list with 15000 entries sometimes get reduced to only 7000. This means that these lists duplicate one another or utilize identical data sources. 
 2. You can quickly set your firewall aliases and related policies without the usual plugin hassle.
@@ -23,7 +24,7 @@ Using a block list in conjunction with firewalls is a critical strategy for enha
 
 #### Supported firewalls
 
-Instructions for [PfSense](https://www.provya.com/blog/pfsense-opnsense-blocking-bad-risky-ip-addresses/)
+Instructions for [PfSense](https://github.com/ZEROF/ipextractor/blob/main/firewall-instructions/pfsense.md)
 
 Instruction for [Opensense](https://github.com/ZEROF/ipextractor/blob/main/firewall-instructions/opensense.md)
 
@@ -33,7 +34,7 @@ Instruction for [OpenWRT](https://github.com/ZEROF/ipextractor/blob/main/firewal
 
 `` Use 'RAW' URL (ipexdbl.txt) from this repository for seamless integration with your firewall. ``
 
-#### ipexdbl.txt extracted from :
+#### ipexdbl.txt extracted from:
 
 1. IPEX Hunters
 2. BinaryDefense
@@ -47,9 +48,11 @@ Instruction for [OpenWRT](https://github.com/ZEROF/ipextractor/blob/main/firewal
 10. Threatfox
 
 #### ipexdbl_simple.txt extracted from:
+
 1. Spamhaus
 
 #### TO DO LIST
+
 - [x] Host full HPP mirror
 - [x] Add ipexhunters.txt (integrate IPEX project honeypots list.)
 - [x] Add projecthoneypot.org RSS feed (beta)
@@ -82,26 +85,19 @@ https://www.neocloud.rs
 ![image](https://github.com/user-attachments/assets/3248351d-76b2-4075-b1c9-9171b8a10951)
 
 ### Repo layout
-```
+
+```IPEX DBL
 ipextractor
 ├── LICENSE
 ├── README.md
 ├── firewall-instructions
 │   ├── fortigate.md
 │   ├── images
-│   │   ├── opensense_alias_1.png
-│   │   ├── opensense_alias_2.png
-│   │   ├── opensense_alias_3.png
-│   │   ├── opensense_floating_block_rule.png
-│   │   ├── opensense_floating_rule.png
-│   │   ├── opensense_label_logview.png
-│   │   ├── opensense_logo.png
-│   │   ├── opensense_packets_tag.png
-│   │   ├── openwrt_banip_1.png
-│   │   ├── openwrt_banip_2.png
-│   │   └── openwrt_logo.png
+│   │   ├── *.png*
+│   │
 │   ├── opensense.md
 │   └── openwrt.md
+│   └── pfsense.md
 ├── ipexdbl.py
 ├── ipexdbl.txt
 ├── ipexdbl_simple.py

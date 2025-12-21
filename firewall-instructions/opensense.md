@@ -3,7 +3,7 @@
 
 ### OPNSense guide provided by @Sharkey
 
-First things first, on the project page https://ipex.root.rodeo, we find the raw link for file [ipexdbl.txt](https://raw.githubusercontent.com/ZEROF/ipextractor/main/ipexdbl.txt) which contains Ipex DBL IP's.
+First things first, on the project page https://ipex.root.rodeo, we can find the raw link for file [ipexdbl.txt](https://raw.githubusercontent.com/ZEROF/ipextractor/main/ipexdbl.txt) which contains Ipex DBL IP's.
 
 Next, go to the Firewall Aliases in OPNsense, and add a new one :
 
