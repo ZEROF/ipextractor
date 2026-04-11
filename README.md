@@ -37,15 +37,16 @@ Instruction for [OpenWRT](https://github.com/ZEROF/ipextractor/blob/main/firewal
 #### ipexdbl.txt extracted from:
 
 1. IPEX Hunters
-2. BinaryDefense
-3. DShield
-4. Crowdsec
-5. Bruteforce
-6. Talos
-7. BlocklistDE
-8. ProjectHoneypot
-9. Spamhaus
-10. Threatfox
+2. IPEX Fortigate HoneyPot (hunter)
+3. BinaryDefense
+4. DShield
+5. Crowdsec
+6. Bruteforce
+7. Talos
+8. BlocklistDE
+9. ProjectHoneypot
+10. Spamhaus
+11. Threatfox
 
 #### ipexdbl_simple.txt extracted from:
 
@@ -67,7 +68,7 @@ Instruction for [OpenWRT](https://github.com/ZEROF/ipextractor/blob/main/firewal
 - [x] Python: don't stop updating list(s) if source is sending error 400
 - [ ] IPEX is inbound traffic dynamic block list, but outbound DBL can exist as well (PoC and more information are needed)
 - [x] Integration of IPEX Hunters honeypots (for now only endlessh backend used)
-- [ ] Integrate web honeypotting to IPEX Hunters 
+- [ ] Integrate web honeypotting to IPEX Hunters (First stage of integration completed: Fortigate Honeypot included: 11/04/2026)
 - [x] Add local version for Fortigate settings
 
 ### Support our project
@@ -110,5 +111,5 @@ ipextractor
     ├── docker-compose.yml
     ├── images
     │   └── ipextractor.png
-    └── index.html
+    └── index.html 
 ```
