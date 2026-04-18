@@ -46,7 +46,6 @@ Instruction for [OpenWRT](https://github.com/ZEROF/ipextractor/blob/main/firewal
 8. BlocklistDE
 9. ProjectHoneypot
 10. Spamhaus
-11. Threatfox
 
 #### ipexdbl_simple.txt extracted from:
 

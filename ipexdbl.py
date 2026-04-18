@@ -117,6 +117,5 @@ if __name__ == "__main__":
         "https://ipex.root.rodeo/projecthoneypot.txt",
         "https://ipex.root.rodeo/ipexhunters.txt",
         "https://ipex.root.rodeo/fortigatehoneypot.txt",
-        "https://threatfox.abuse.ch/export/json/recent",
     ]
     save_ips(URLS, "ipexdbl.txt")
