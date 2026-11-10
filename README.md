@@ -67,7 +67,7 @@ Instruction for [OpenWRT](https://github.com/ZEROF/ipextractor/blob/main/firewal
 - [x] Python: don't stop updating list(s) if source is sending error 400
 - [ ] IPEX is inbound traffic dynamic block list, but outbound DBL can exist as well (PoC and more information are needed)
 - [x] Integration of IPEX Hunters honeypots (for now only endlessh backend used)
-- [ ] Integrate web honeypotting to IPEX Hunters (First stage of integration completed: Fortigate Honeypot included: 11/04/2026)
+- [x] Integrate web honeypotting to IPEX Hunters
 - [x] Add local version for Fortigate settings
 
 ### Support our project
@@ -83,6 +83,12 @@ https://glesys.com
 https://www.neocloud.rs
 
 ![image](https://github.com/user-attachments/assets/3248351d-76b2-4075-b1c9-9171b8a10951)
+
+https://www.stormycloud.org
+
+<img width="300" height="112" alt="stormycloud" src="https://github.com/user-attachments/assets/23dda095-d750-49a6-bcce-6c125f6e63da" />
+
+
 
 ### Repo layout
 
